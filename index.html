@@ -16,7 +16,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="theme-color" content="#000000" />
-
   <meta name='robots' content='max-image-preview:large' />
   <link rel="manifest" href="../pwa-manifest.json">
   <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../icon/apple-touch-icon.png">
@@ -1384,18 +1383,79 @@
               <div class="container">
                 <div class="row justify-content-center flex-row flex-wrap">
                   <!-- Adjust columns and alignment -->
-                  <div class="col-6 d-flex justify-content-end mb-3">
+                  <!-- <div class="col-6 d-flex justify-content-end mb-3">
+                    <a href="FamilyphotoPackage.jpg">
                     <img src="FamilyphotoPackage.jpg" class="img-fluid shadow" style="max-height: 250px;"
                       alt="Family Photo Package">
+                    </a>
                   </div>
                   <div class="col-6 d-flex justify-content-start mb-3">
+                    <a href="WeddingPackage.jpg">
                     <img src="WeddingPackage.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Wedding Package">
-                  </div>
+                    </a>
+                  </div> -->
+                    <div class="col-6 d-flex justify-content-end mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#familyPhotoModal">
+                        <img src="FamilyphotoPackage.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Family Photo Package">
+                      </a>
+                    </div>
+                  
+                    <div class="col-6 d-flex justify-content-start mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#weddingPhotoModal">
+                        <img src="WeddingPackage.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Wedding Package">
+                      </a>
+                    </div>
+                  
                 </div>
               </div>
             </div>
           </div>
+          <!-- <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img src="FamilyphotoPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Family Photo Package">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="weddingPhotoModal" tabindex="-1" aria-labelledby="weddingPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img src="WeddingPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Wedding Package">
+                </div>
+              </div>
+            </div>
+          </div> -->
 
+          <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header d-flex flex-column align-items-center">
+                  <h5 class="modal-title text-center" id="familyPhotoModalLabel">Family Photo Package</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="FamilyphotoPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Family Photo Package">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="weddingPhotoModal" tabindex="-1" aria-labelledby="weddingPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header d-flex flex-column align-items-center">
+                  <h5 class="modal-title text-center" id="weddingPhotoModalLabel">Wedding Package</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="WeddingPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Wedding Package">
+                </div>
+              </div>
+            </div>
+          </div>
 
 
           <div class="card contact-card1 p-4 bg-grand">
@@ -1549,7 +1609,6 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"></script>
     <script src="colornode.js"></script>
-
     <script>
       $(window).load(function () {
         setTimeout(() => {
