@@ -47,41 +47,43 @@
       text-decoration: none;
 
     }
+
     .wave-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
-}
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px;
+      height: 70px;
+    }
 
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(255, 0, 0, 0.4) 30%, transparent 60%);
-  border-radius: 50%;
-  animation: wave-effect 1.5s infinite;
-  z-index: -1;
-}
+    .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 0, 0, 0.4) 30%, transparent 60%);
+      border-radius: 50%;
+      animation: wave-effect 1.5s infinite;
+      z-index: -1;
+    }
 
-.youtube-icon {
-  z-index: 1;
-}
+    .youtube-icon {
+      z-index: 1;
+    }
 
-@keyframes wave-effect {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
+    @keyframes wave-effect {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
 
     .redbg {
       background: rgba(236, 236, 236, 0.692);
@@ -338,7 +340,31 @@
       color: white;
     }
 
+    .maillogo {
+      width: 40px;
+      height: 40px;
+    }
 
+    /* Adjust size for mobile */
+    @media (max-width: 768px) {
+      .maillogo {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .youtubelogo {
+      width: 45px;
+      height: 45px;
+    }
+
+    /* Adjust size for mobile */
+    @media (max-width: 768px) {
+      .youtubelogo {
+        width: 35px;
+        height: 35px;
+      }
+    }
 
 
 
@@ -415,6 +441,13 @@
     .cdata {
       font-weight: 700 !important;
       color: #585858;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+
+    .cdata_two {
+      font-weight: 700 !important;
+      color: #d0d0d0;
       font-size: 18px !important;
       text-decoration: none;
     }
@@ -595,7 +628,7 @@
       <!-- <img src="unsplash-photo-3.jpg" class="card-img-top imagecp news-story-img" alt="...">
             -->
       <!-- <div class="container-im img-hover-zoom img-hover-zoom--brightness"> -->
-         <div class="container-im "style="overflow: hidden;">  
+      <div class="container-im " style="overflow: hidden;">
         <img src="bg5image.jpg" class="card-img-top imagecp news-story-img zoom" alt="...">
 
 
@@ -646,13 +679,13 @@
         </div> -->
         <div class="top-right">
           <a href="maharaja.vcf" style="text-decoration: none;">
-          <button id="" class="btn btn-grad btn-sm">
+            <button id="" class="btn btn-grad btn-sm">
 
-            <svg fill="#fff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4,21a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3ZM12,7.5a2,2,0,1,1-2,2A2,2,0,0,1,12,7.5ZM8.211,16.215a4,4,0,0,1,7.578,0A.993.993,0,0,1,14.83,17.5H9.18A1,1,0,0,1,8.211,16.215Z" />
-            </svg>
-            Save Contact</button></a>
+              <svg fill="#fff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4,21a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3ZM12,7.5a2,2,0,1,1-2,2A2,2,0,0,1,12,7.5ZM8.211,16.215a4,4,0,0,1,7.578,0A.993.993,0,0,1,14.83,17.5H9.18A1,1,0,0,1,8.211,16.215Z" />
+              </svg>
+              Save Contact</button></a>
 
         </div>
         <div class="bottom-right subbrand"></div>
@@ -988,13 +1021,22 @@
                   <div class="col align-self-center text-end">
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg"  width="30px" height="30px"  viewBox="0 0 48 48">
-                      <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="maillogo" viewBox="0 0 48 48">
+                      <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                      <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                      <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                      </polygon>
+                      <path fill="#c62828"
+                        d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                      </path>
+                      <path fill="#fbc02d"
+                        d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                      </path>
+                    </svg>
 
 
 
-                   
+
                   </div>
 
                 </div>
@@ -1292,7 +1334,57 @@
             </div>
           </a>
 
+          <a target="_blank" href="https://youtube.com/@maharajastudiorajan?si=wutVtzkuzqIGs_mq" class="socialboxlink ">
+            <div class="card contact-card1 lastrow" style="background-color:#ff001a;">
 
+              <div class="card-body">
+
+                <div class="row">
+                  <!-- <div class="col-2">
+                    <img src="youtubethumb.jpg" class="shadow" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="">
+                  </div> -->
+                  <div class="col-8 align-self-center text-start">
+                    <h4 class="ctitle">Youtube
+
+
+                      
+
+
+
+                    </h4>
+                    <h3 class="cdata_two">Maharajas B Rajan</h3>
+
+
+                  </div>
+                  <div class="col align-self-center text-end">
+
+                    <img src="youtubethumb.jpg" class="shadow" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="">
+
+
+
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="youtubelogo" viewBox="0,0,256,256">
+                      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                          <path
+                            d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
+                          </path>
+                        </g>
+                      </g>
+                    </svg> -->
+
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </a>
 
         </div>
 
@@ -1372,7 +1464,7 @@
               </div>
             </div>
           </div>
-         
+
           <div class="card contact-card1 p-4 justwhitebg">
             <div class="card-title">
               <h3>Package Details</h3>
@@ -1380,90 +1472,66 @@
             <div class="card-body">
               <div class="container">
                 <div class="row justify-content-center flex-row flex-wrap">
-                 
-                    <div class="col-6 d-flex justify-content-end mb-3">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#familyPhotoModal">
-                        <img src="FamilyphotoPackage.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Family Photo Package">
-                      </a>
-                    </div>
-                  
-                    <div class="col-6 d-flex justify-content-start mb-3">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#weddingPhotoModal">
-                        <img src="WeddingPackage.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Wedding Package">
-                      </a>
-                    </div>
-                  
+
+                  <div class="col-6 d-flex justify-content-end mb-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#familyPhotoModal">
+                      <img src="FamilyphotoPackage.jpg" class="img-fluid shadow" style="max-height: 250px;"
+                        alt="Family Photo Package">
+                    </a>
+                  </div>
+
+                  <div class="col-6 d-flex justify-content-start mb-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#weddingPhotoModal">
+                      <img src="WeddingPackage.jpg" class="img-fluid shadow" style="max-height: 250px;"
+                        alt="Wedding Package">
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="card contact-card1 p-4 justwhitebg">
+          <!-- <div class="card contact-card1 p-4 justwhitebg">
             <div class="card-title">
               <h3>Youtube</h3>
             </div>
             <div class="card-body">
               <div class="container">
-                <!-- <div class="row justify-content-start flex-row flex-wrap">
-                  <div class="col-6 d-flex justify-content-start mb-3 position-relative">
-                    <a href="https://youtube.com/@maharajastudiorajan?si=wutVtzkuzqIGs_mq" data-bs-toggle="modal" data-bs-target="#familyPhotoModal" class="d-block position-relative">
-                      <img src="youtubethumb.jpg" class=" shadow" style="height: 200px;width: 400px; border-radius: 10px;" alt="Family Photo Package">
-                      <svg xmlns="http://www.w3.org/2000/svg" 
-                        class="position-absolute" 
-                        style="top: 50%; left: 50%; transform: translate(-50%, -50%);" 
-                        width="50" height="50" viewBox="0 0 48 48">
-                        <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path>
-                        <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <h1 class="text" style="font-weight:bold">Maharajas B Rajan, World Traveller, India Rajan</h1>
-                </div> -->
+                
                 <div class="row justify-content-center align-items-center flex-row flex-wrap">
                   <div class="col-12 d-flex justify-content-center align-items-center position-relative">
-                    <a href="https://youtube.com/@maharajastudiorajan?si=wutVtzkuzqIGs_mq" 
-                       
-                       class="d-block position-relative" 
-                       style="width: 640px; ">
-                      <img src="youtubethumb.jpg" 
-                           class="shadow" 
-                           style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;" 
-                           alt="Family Photo Package">
+                    <a href="https://youtube.com/@maharajastudiorajan?si=wutVtzkuzqIGs_mq"
+                      class="d-block position-relative" style="width: 640px; ">
+                      <img src="youtubethumb.jpg" class="shadow"
+                        style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;"
+                        alt="Family Photo Package">
                       <div class="wave-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                             class="position-absolute youtube-icon" 
-                             style="top: 50%; left: 50%; transform: translate(-50%, -50%);" 
-                             width="50" height="50" viewBox="0 0 48 48">
-                          <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute youtube-icon"
+                          style="top: 50%; left: 50%; transform: translate(-50%, -50%);" width="50" height="50"
+                          viewBox="0 0 48 48">
+                          <path fill="#FF3D00"
+                            d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                          </path>
                           <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
                         </svg>
                         <div class="wave"></div>
                       </div>
                     </a>
                   </div>
-                  <h1 class="text text-center mt-3" style="font-weight: bold;">Maharajas B Rajan, World Traveller, India Rajan</h1>
+                  <h1 class="text text-center mt-3" style="font-weight: bold;">Maharajas B Rajan, World Traveller, India
+                    Rajan</h1>
                 </div>
+
+
+
+
                 
-                
-                
-                  
-                     <!-- <div class="col-6 d-flex justify-content-start mb-3">
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#familyPhotoModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-                          <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-                          </svg>
-                        <img src="youtubethumb.jpg" class="img-fluid shadow" style="max-height: 250px;" alt="Family Photo Package">
-                      </a>
-                    </div> -->
-                  
-                    <!-- <div class="col-6 d-flex justify-content-start mb-3">
-                      
-                    </div> -->
-                  
-                </div>
+
               </div>
             </div>
-          </div>
-          <!-- <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel" aria-hidden="true">
+          </div> -->
+        </div>
+        <!-- <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
@@ -1483,64 +1551,68 @@
             </div>
           </div> -->
 
-          <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header d-flex flex-column align-items-center">
-                  <h5 class="modal-title text-center" id="familyPhotoModalLabel">Family Photo Package</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="FamilyphotoPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Family Photo Package">
-                </div>
+        <div class="modal fade" id="familyPhotoModal" tabindex="-1" aria-labelledby="familyPhotoModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <h5 class="modal-title text-center" id="familyPhotoModalLabel">Family Photo Package</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="FamilyphotoPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;"
+                  alt="Family Photo Package">
               </div>
             </div>
           </div>
-          <div class="modal fade" id="weddingPhotoModal" tabindex="-1" aria-labelledby="weddingPhotoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header d-flex flex-column align-items-center">
-                  <h5 class="modal-title text-center" id="weddingPhotoModalLabel">Wedding Package</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="WeddingPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;" alt="Wedding Package">
-                </div>
+        </div>
+        <div class="modal fade" id="weddingPhotoModal" tabindex="-1" aria-labelledby="weddingPhotoModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <h5 class="modal-title text-center" id="weddingPhotoModalLabel">Wedding Package</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="WeddingPackage.jpg" class="img-fluid" style="max-width: 80%; height: auto;"
+                  alt="Wedding Package">
               </div>
             </div>
           </div>
+        </div>
 
 
-          <div class="card contact-card1 p-4 bg-grand">
+        <div class="card contact-card1 p-4 bg-grand">
 
-            <div class="card-title">
+          <div class="card-title">
 
-              <h3>Proprietor </h3>
+            <h3>Proprietor </h3>
 
-            </div>
-            <div class="card-body">
-              <div class="container">
-                <div class="row justify-content-center">
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row justify-content-center">
 
-                  <div class=" d-flex flex-column align-items-center person-info text-center">
-                    <div class="col-md-12">
-                      <img src="personimage.jpg" style="height: 100px;border-radius: 50%;" alt="Person Image">
-                    </div>
-                    <div class="col-md-12 mt-3">
-                      <h1 class="text" style="font-weight:bold">R Unnikrishnan</h1>
-                      <p class="mt-2 fs-5 text">9995361929</p>
-                    </div>
-
-
-
+                <div class=" d-flex flex-column align-items-center person-info text-center">
+                  <div class="col-md-12">
+                    <img src="personimage.jpg" style="height: 100px;border-radius: 50%;" alt="Person Image">
                   </div>
+                  <div class="col-md-12 mt-3">
+                    <h1 class="text" style="font-weight:bold">R Unnikrishnan</h1>
+                    <p class="mt-2 fs-5 text">9995361929</p>
+                  </div>
+
+
+
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
 
-          <!-- <div class="col">
+        <!-- <div class="col">
                         
                         <a href="#" class="socialbox">
                         <div class="card nobg">
@@ -1559,7 +1631,7 @@
 
 
 
-          <!-- <div class="col">
+        <!-- <div class="col">
                         
                         <a href="#" class="socialbox">
                         <div class="card nobg">
@@ -1595,14 +1667,14 @@
         </div> -->
 
 
-          <!-- 
+        <!-- 
         <div class="container-fluid justwhitebg  mt-3">
 
           <img src="logo.svg" class="img-fluid m-3"> 
 
         </div> -->
 
-          <!-- <div class="container-fluid bg-grand">
+        <!-- <div class="container-fluid bg-grand">
           <div class="p-5 text-start"> 
          <img src="personimage.JPG" class="img-fluid"> 
          <h1 class="text">name :hvjh</h1>
@@ -1619,7 +1691,7 @@
          </div>
         </div>  -->
 
-          <!-- <div class="container-fluid bg-grand">
+        <!-- <div class="container-fluid bg-grand">
           <div class="person-info">
               <div class="image-container p-4">
                   <img src="personimage.JPG" alt="Person Image">
@@ -1633,219 +1705,219 @@
 
 
 
-        </div>
-        <div class="card-footer cardlyfooter ">
-          <a target="_blank" class="link" href="https://cardly.in"> Designed by Cardly/</a>
-        </div>
       </div>
-
-
-
+      <div class="card-footer cardlyfooter ">
+        <a target="_blank" class="link" href="https://cardly.in"> Designed by Cardly/</a>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"></script>
-    <script src="colornode.js"></script>
-    <script>
-      $(window).load(function () {
-        setTimeout(() => {
-          $('#exampleModal').modal('show');
-        }, 1000);
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="colornode.js"></script>
+  <script>
+    $(window).load(function () {
+      setTimeout(() => {
+        $('#exampleModal').modal('show');
+      }, 1000);
+    });
+
+    var imgHoverZoomElements = document.querySelectorAll(".img-hover-zoom");
+    var ticking = false;
+
+    // Function to apply zoom effect based on scroll position
+    function applyImageZoom() {
+      var scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      imgHoverZoomElements.forEach(function (element) {
+        var zoomedImage = element.querySelector("img.zoom");
+        var scaleFactor = 1 + scroll / 500; // Adjust the divisor for desired zoom effect sensitivity
+
+        zoomedImage.style.transform = "scale(" + scaleFactor + ")";
       });
 
-      var imgHoverZoomElements = document.querySelectorAll(".img-hover-zoom");
-      var ticking = false;
+      ticking = false;
+    }
 
-      // Function to apply zoom effect based on scroll position
-      function applyImageZoom() {
-        var scroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        imgHoverZoomElements.forEach(function (element) {
-          var zoomedImage = element.querySelector("img.zoom");
-          var scaleFactor = 1 + scroll / 500; // Adjust the divisor for desired zoom effect sensitivity
-
-          zoomedImage.style.transform = "scale(" + scaleFactor + ")";
-        });
-
-        ticking = false;
+    // Throttle scroll event
+    function handleScroll() {
+      if (!ticking) {
+        requestAnimationFrame(applyImageZoom);
+        ticking = true;
       }
+    }
 
-      // Throttle scroll event
-      function handleScroll() {
-        if (!ticking) {
-          requestAnimationFrame(applyImageZoom);
-          ticking = true;
-        }
-      }
-
-      // Debounce resize event
-      function debounce(func, delay) {
-        var timeout;
-        return function () {
-          clearTimeout(timeout);
-          timeout = setTimeout(func, delay);
-        };
-      }
-
-      // Initiate smooth scrolling effect
-      requestAnimationFrame(applyImageZoom);
-
-      // Add event listeners for scroll and resize events
-      window.addEventListener("scroll", handleScroll);
-      window.addEventListener("resize", debounce(applyImageZoom, 250));
-
-      const removeClass = (className) => {
-        const elements = document.querySelectorAll(`.${className}`);
-        for (const element of elements) {
-          element.classList.remove(className);
-        }
+    // Debounce resize event
+    function debounce(func, delay) {
+      var timeout;
+      return function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(func, delay);
       };
+    }
+
+    // Initiate smooth scrolling effect
+    requestAnimationFrame(applyImageZoom);
+
+    // Add event listeners for scroll and resize events
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", debounce(applyImageZoom, 250));
+
+    const removeClass = (className) => {
+      const elements = document.querySelectorAll(`.${className}`);
+      for (const element of elements) {
+        element.classList.remove(className);
+      }
+    };
 
 
 
-      navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
-        if (result.state == "granted" || result.state == "prompt") {
+    navigator.permissions.query({ name: "clipboard-write" }).then((result) => {
+      if (result.state == "granted" || result.state == "prompt") {
 
 
-          // removeClass('clipboard');
+        // removeClass('clipboard');
 
-        }
-      });
-
-
-      ///////////////////////////button
-
-      // JSON object representing the vCard data
-      // var vCardData = {
-      //   "firstName": "MAHARAJA STUDIO & SILVER JEWELLERY",
-      //   //   "lastName": "",
-      //   "email": "maharajaperoorkada@gmail.com",
-      //   "phone": "+919400013233",
-      //   //   "addressType": "office",
-      //   //   "address": {
-      //   //     "street": "Star Creations",
-      //   //     "city": "Market JUnction, Vithura",
-      //   //     "state": "KL",
-      //   //     "country": "India",
-      //   //     "postalCode": "695551"
-      //   //   },
-      //   "socialMedia": {
-      //     "whatsapp": "+919400013233",
-      //     "instagram": "https://www.instagram.com/starvithura/",
-      //     // "twitter": "",
-      //     "facebook": "https://www.facebook.com/starvithura/",
-      //     // "linkedin": "",
-      //     "youtube": "https://www.youtube.com/channel/UCkY01c0SYvVhClgRgnk4oGg"
-      //   },
-      //   //   "website": "https://ponmudidale.com",
-      //   // "jobTitle": "Anil K",
-      //   //   "organization": "PONMUDI DALE HOMESTAY"
-      // };
-
-      // Function to create the vCard string
-      // function createVCard(vCardData) {
-      //   var vCard = "BEGIN:VCARD\n";
-      //   vCard += "VERSION:3.0\n";
-      //   vCard += "N:" + (vCardData.lastName || "") + ";" + (vCardData.firstName || "") + ";;;\n";
-      //   vCard += "FN:" + (vCardData.firstName || "") + " " + (vCardData.lastName || "") + "\n";
-      //   vCard += "EMAIL:" + (vCardData.email || "") + "\n";
-      //   vCard += "TEL:" + (vCardData.phone || "") + "\n";
-
-      //   if (vCardData.address) {
-      //     var addressType = vCardData.addressType === "office" ? "WORK" : "HOME";
-      //     vCard += "ADR;TYPE=" + addressType + ":;;" + (vCardData.address.street || "") + ";" + (vCardData.address.city || "") + ";" + (vCardData.address.state || "") + ";" + (vCardData.address.postalCode || "") + ";" + (vCardData.address.country || "") + "\n";
-      //   }
-
-      //   if (vCardData.socialMedia) {
-      //     if (vCardData.socialMedia.whatsapp) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=whatsapp:" + vCardData.socialMedia.whatsapp + "\n";
-      //     }
-
-      //     if (vCardData.socialMedia.instagram) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=instagram:" + vCardData.socialMedia.instagram + "\n";
-      //     }
-
-      //     if (vCardData.socialMedia.twitter) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=twitter:" + vCardData.socialMedia.twitter + "\n";
-      //     }
-
-      //     if (vCardData.socialMedia.facebook) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=facebook:" + vCardData.socialMedia.facebook + "\n";
-      //     }
-
-      //     if (vCardData.socialMedia.linkedin) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=linkedin:" + vCardData.socialMedia.linkedin + "\n";
-      //     }
-
-      //     if (vCardData.socialMedia.youtube) {
-      //       vCard += "X-SOCIALPROFILE;TYPE=youtube:" + vCardData.socialMedia.youtube + "\n";
-      //     }
-      //   }
-
-      //   if (vCardData.website) {
-      //     vCard += "URL:" + vCardData.website + "\n";
-      //   }
-
-      //   if (vCardData.jobTitle) {
-      //     vCard += "TITLE:" + vCardData.jobTitle + "\n";
-      //   }
-
-      //   if (vCardData.organization) {
-      //     vCard += "ORG:" + vCardData.organization + "\n";
-      //   }
-
-      //   vCard += "END:VCARD";
-      //   return vCard;
-      // }
-
-      // Function to download the vCard file
-      // function downloadVCard() {
-      //   var vCard = createVCard(vCardData);
-      //   var element = document.createElement("a");
-      //   element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(vCard));
-      //   element.setAttribute("download", "contact.vcf");
-      //   element.style.display = "none";
-      //   document.body.appendChild(element);
-      //   element.click();
-      //   document.body.removeChild(element);
-      // }
+      }
+    });
 
 
-      // var downloadButton = document.getElementById("downloadvcard");
-      // downloadButton.addEventListener("click", downloadVCard);
+    ///////////////////////////button
 
-      //////////////////////////////
+    // JSON object representing the vCard data
+    // var vCardData = {
+    //   "firstName": "MAHARAJA STUDIO & SILVER JEWELLERY",
+    //   //   "lastName": "",
+    //   "email": "maharajaperoorkada@gmail.com",
+    //   "phone": "+919400013233",
+    //   //   "addressType": "office",
+    //   //   "address": {
+    //   //     "street": "Star Creations",
+    //   //     "city": "Market JUnction, Vithura",
+    //   //     "state": "KL",
+    //   //     "country": "India",
+    //   //     "postalCode": "695551"
+    //   //   },
+    //   "socialMedia": {
+    //     "whatsapp": "+919400013233",
+    //     "instagram": "https://www.instagram.com/starvithura/",
+    //     // "twitter": "",
+    //     "facebook": "https://www.facebook.com/starvithura/",
+    //     // "linkedin": "",
+    //     "youtube": "https://www.youtube.com/channel/UCkY01c0SYvVhClgRgnk4oGg"
+    //   },
+    //   //   "website": "https://ponmudidale.com",
+    //   // "jobTitle": "Anil K",
+    //   //   "organization": "PONMUDI DALE HOMESTAY"
+    // };
+
+    // Function to create the vCard string
+    // function createVCard(vCardData) {
+    //   var vCard = "BEGIN:VCARD\n";
+    //   vCard += "VERSION:3.0\n";
+    //   vCard += "N:" + (vCardData.lastName || "") + ";" + (vCardData.firstName || "") + ";;;\n";
+    //   vCard += "FN:" + (vCardData.firstName || "") + " " + (vCardData.lastName || "") + "\n";
+    //   vCard += "EMAIL:" + (vCardData.email || "") + "\n";
+    //   vCard += "TEL:" + (vCardData.phone || "") + "\n";
+
+    //   if (vCardData.address) {
+    //     var addressType = vCardData.addressType === "office" ? "WORK" : "HOME";
+    //     vCard += "ADR;TYPE=" + addressType + ":;;" + (vCardData.address.street || "") + ";" + (vCardData.address.city || "") + ";" + (vCardData.address.state || "") + ";" + (vCardData.address.postalCode || "") + ";" + (vCardData.address.country || "") + "\n";
+    //   }
+
+    //   if (vCardData.socialMedia) {
+    //     if (vCardData.socialMedia.whatsapp) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=whatsapp:" + vCardData.socialMedia.whatsapp + "\n";
+    //     }
+
+    //     if (vCardData.socialMedia.instagram) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=instagram:" + vCardData.socialMedia.instagram + "\n";
+    //     }
+
+    //     if (vCardData.socialMedia.twitter) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=twitter:" + vCardData.socialMedia.twitter + "\n";
+    //     }
+
+    //     if (vCardData.socialMedia.facebook) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=facebook:" + vCardData.socialMedia.facebook + "\n";
+    //     }
+
+    //     if (vCardData.socialMedia.linkedin) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=linkedin:" + vCardData.socialMedia.linkedin + "\n";
+    //     }
+
+    //     if (vCardData.socialMedia.youtube) {
+    //       vCard += "X-SOCIALPROFILE;TYPE=youtube:" + vCardData.socialMedia.youtube + "\n";
+    //     }
+    //   }
+
+    //   if (vCardData.website) {
+    //     vCard += "URL:" + vCardData.website + "\n";
+    //   }
+
+    //   if (vCardData.jobTitle) {
+    //     vCard += "TITLE:" + vCardData.jobTitle + "\n";
+    //   }
+
+    //   if (vCardData.organization) {
+    //     vCard += "ORG:" + vCardData.organization + "\n";
+    //   }
+
+    //   vCard += "END:VCARD";
+    //   return vCard;
+    // }
+
+    // Function to download the vCard file
+    // function downloadVCard() {
+    //   var vCard = createVCard(vCardData);
+    //   var element = document.createElement("a");
+    //   element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(vCard));
+    //   element.setAttribute("download", "contact.vcf");
+    //   element.style.display = "none";
+    //   document.body.appendChild(element);
+    //   element.click();
+    //   document.body.removeChild(element);
+    // }
+
+
+    // var downloadButton = document.getElementById("downloadvcard");
+    // downloadButton.addEventListener("click", downloadVCard);
+
+    //////////////////////////////
 
 
 
-    </script>
+  </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GED109S1GN"></script>
-    <script src='main.js'></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GED109S1GN"></script>
+  <script src='main.js'></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-GED109S1GN');
-    </script>
+    gtag('config', 'G-GED109S1GN');
+  </script>
 
 </body>
 
